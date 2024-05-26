@@ -44,6 +44,6 @@ def solve(a, b, c):
         result2 = complex(real=real, imag=imag)
     else:
         result2 = round(x2, 2)
-    print("=" * len(str([result1, result2])))
-    return [result1, result2]
+    print("x1:", result1)
+    print("x2:", result2)
 
