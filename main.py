@@ -1,8 +1,8 @@
 import sys
 
 sys.path.append("./src/")
-sys.path.append("./src/maths")
-sys.path.append("./src/gui")
+sys.path.append("./src/maths/")
+sys.path.append("./src/gui/")
 
 from get_input import get_string_input
 from second_degree_polynomial import solve_equation as solve_2nd_polynomial
