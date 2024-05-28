@@ -1,3 +1,5 @@
+from time import sleep
+
 def solve_equation():
     is_input_valid = False
     a, b, c = 0, 0, 0
@@ -46,4 +48,10 @@ def solve(a, b, c):
         result2 = round(x2, 2)
     print("x1:", result1)
     print("x2:", result2)
+    sleep(1)
+    print("Count down from ")
+    sleep(1)
+    for i in range(5):
+        print(5 - i, "...", sep="")
+        sleep(1)
 

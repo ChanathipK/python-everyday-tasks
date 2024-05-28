@@ -1,3 +1,5 @@
+from time import sleep
+
 def get_positive_int_input() -> int:
     is_input_valid = False
     user_input = ""
@@ -15,4 +17,20 @@ def get_positive_int_input() -> int:
 
 def fibonacci():
     n = get_positive_int_input()
-    pass
+    if n == 1 or n == 2:
+        print("fibonacci at n: 1")
+    else:
+        q1 = 1
+        q2 = 1
+        temp = 0
+        for i in range(n - 2):
+            temp = q1 + q2
+            q1 = q2
+            q2 = temp
+        print(f"fibonacci at n: {temp}")
+    sleep(1)
+    print("Count down from ")
+    sleep(1)
+    for i in range(5):
+        print(5 - i, "...", sep="")
+        sleep(1)
